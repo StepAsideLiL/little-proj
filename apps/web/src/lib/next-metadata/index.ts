@@ -3,11 +3,11 @@ import siteConfig from "@/lib/site-config";
 import baseUrl from "@/lib/base-url";
 
 export default function nextMetadata(
-  title: string,
+  title?: string,
   description?: string
 ): Metadata {
   const ogSearchParams = new URLSearchParams();
-  ogSearchParams.set("title", title);
+  ogSearchParams.set("title", title ? title : siteConfig.title);
 
   return {
     title: title ? `${title} - ${siteConfig.title}` : siteConfig.title,

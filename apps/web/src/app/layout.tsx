@@ -1,16 +1,9 @@
 import fonts from "@/lib/fonts";
 import type { Metadata } from "next";
 import "@workspace/design-system/globals.css";
-import siteConfig from "@/lib/site-config";
+import nextMetadata from "@/lib/next-metadata";
 
-export const metadata: Metadata = {
-  title: {
-    template: `%s - ${siteConfig.title}`,
-    default: siteConfig.title,
-  },
-  description: siteConfig.description,
-  authors: siteConfig.author,
-};
+export const metadata: Metadata = nextMetadata("mucha");
 
 export default function RootLayout({
   children,
