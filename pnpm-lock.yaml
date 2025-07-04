@@ -8,6 +8,12 @@ importers:
 
   .:
     devDependencies:
+      '@workspace/eslint-config':
+        specifier: workspace:*
+        version: link:packages/eslint-config
+      '@workspace/typescript-config':
+        specifier: workspace:*
+        version: link:packages/typescript-config
       prettier:
         specifier: ^3.6.0
         version: 3.6.2
