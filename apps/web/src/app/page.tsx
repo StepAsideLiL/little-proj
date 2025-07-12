@@ -12,16 +12,6 @@ export default function Page() {
         <h3>Edit The following files to get started:</h3>
         <ul className="list-inside list-disc">
           <li>
-            <code className="font-mono text-sm">package.json</code>{" "}
-            <span>[name field]</span>
-          </li>
-          <li>
-            <code className="font-mono text-sm">
-              apps/web/src/lib/site-config/index.ts
-            </code>{" "}
-            <span>[name, description, author name and url field]</span>
-          </li>
-          <li>
             <code className="font-mono text-sm">apps/web/public</code>{" "}
             <span>
               [generate android-chrome-192x192.png, android-chrome-512x512.png,

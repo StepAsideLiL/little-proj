@@ -16,10 +16,10 @@ export default function nextMetadata(
     metadataBase: new URL(baseUrl),
     icons: {
       icon: [
-        { url: "/favicon.ico" },
-        new URL("/favicon.ico", baseUrl),
-        { url: "/favicon-16x16.png", sizes: "16x16" },
-        { url: "/favicon-32x32.png", sizes: "32x32" },
+        { url: "/icons/favicon.ico" },
+        new URL("/icons/favicon.ico", baseUrl),
+        { url: "/icons/favicon-16x16.png", sizes: "16x16" },
+        { url: "/icons/favicon-32x32.png", sizes: "32x32" },
       ],
     },
     manifest: "/site.webmanifest",
