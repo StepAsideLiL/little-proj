@@ -1,3 +1,5 @@
+import SwitchThemeButton from "@/components/SwitchThemeButton";
+import { Button } from "@workspace/design-system/ui/button";
 import Link from "next/link";
 
 export default function Page() {
@@ -6,24 +8,16 @@ export default function Page() {
       <h1 className="text-2xl font-bold">Hi! 👋 </h1>
       <p>Welcome to Little Proj.</p>
 
-      <div className="h-10"></div>
-
-      <div>
-        <h3>Edit The following files to get started:</h3>
-        <ul className="list-inside list-disc">
-          <li>
-            <code className="font-mono text-sm">apps/web/public</code>{" "}
-            <span>
-              [generate android-chrome-192x192.png, android-chrome-512x512.png,
-              apple-touch-icon.png, favicon.ico, favicon-16x16.png,
-              favicon-32x32.png, site.webmanifest from{" "}
-              <Link href={"https://favicon.io/"} className="underline">
-                favicon.io
-              </Link>{" "}
-              and paste in public folder]
-            </span>
-          </li>
-        </ul>
+      <div className="flex items-center gap-2">
+        <Button asChild>
+          <Link
+            href={"https://stepasidelil.vercel.app/projects/little-proj"}
+            target="_blank"
+          >
+            Read Docs and Start Coding
+          </Link>
+        </Button>
+        <SwitchThemeButton />
       </div>
     </main>
   );
